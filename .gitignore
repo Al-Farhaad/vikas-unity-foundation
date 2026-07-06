@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+backend/data/*
+!backend/data/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/cache/*
+!backend/cache/.gitkeep
+backend/venv/
+backend/.ven
+node_modules/
+*.log
+*.db
+frontend/.next
