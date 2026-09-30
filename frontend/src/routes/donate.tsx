@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PageHero } from "@/components/PageHero";
 import { Heart, HeartHandshake, BookOpen, Package, Check, Copy, Smartphone, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import scannerImg from "@/assets/scanner.jpeg";
+import scannerImg from "@/assets/image.png";
 
 export const Route = createFileRoute("/donate")({
   head: () => ({
@@ -39,7 +39,7 @@ const tiers = [
 
 function DonatePage() {
   const [copied, setCopied] = useState(false);
-  const upiId = "vikasunityfoundation@icici";
+  const upiId = "0xB1Da9decd7917B823B64538a9fd9Ad266F2d9eB7";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(upiId);
@@ -58,11 +58,11 @@ function DonatePage() {
         <div className="container-page max-w-4xl">
           {/* Main Donation Container */}
           <div className="flex flex-col items-center text-center space-y-8">
-            
+
             {/* QR Code Scanner Card on Top */}
             <div className="relative group w-full max-w-md p-6 rounded-3xl border border-border bg-card shadow-soft hover:shadow-elevated transition-all duration-300">
               <div className="absolute inset-0 bg-muted/20 rounded-3xl opacity-50 pointer-events-none" />
-              
+
               <div className="relative flex flex-col items-center">
                 {/* Scanner Frame */}
                 <div className="relative p-4 bg-white rounded-2xl shadow-inner border border-border max-w-[280px] mx-auto transition-transform group-hover:scale-[1.02] duration-300">
@@ -91,7 +91,7 @@ function DonatePage() {
 
             {/* Below Texts / Info on How to Donate */}
             <div className="w-full max-w-2xl space-y-6">
-              
+
               {/* UPI Copy Badge */}
               <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 rounded-2xl border border-border bg-muted/40 max-w-md mx-auto">
                 <div className="text-left">
